@@ -1,0 +1,12 @@
+.home{
+    @include themify{        
+        grid-area: main;
+        background-color: themed('bgSoft');
+        color: themed('textColor');
+        padding: 0 0 0 1rem;
+    }
+
+    @include mobile{
+        padding: 1rem;
+    }
+}

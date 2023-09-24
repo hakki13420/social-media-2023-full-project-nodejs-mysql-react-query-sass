@@ -1,0 +1,13 @@
+.posts{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+
+    @include mobile{
+        padding: 2rem 0;
+    }
+
+    
+}

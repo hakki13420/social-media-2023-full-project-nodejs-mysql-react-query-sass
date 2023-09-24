@@ -1,0 +1,37 @@
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    img{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;                
+    }
+    svg{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;                
+        background-color: lightgrey;
+    }
+    span{
+        font-weight: 500;
+        color: themed('textColor');
+        font-size: 12px;
+    }
+    p{
+        color: gray;
+        font-size: 10px;
+    }
+    
+    .online{
+        position:absolute;
+        top: 0;
+        left: 1.5rem;
+        width: 12px;
+        height: 12px;
+        background-color: green;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,89 @@
+.share{
+    @include themify{
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: themed('bg');        
+        padding: 2rem 1rem;
+        border-radius: 10px;
+        .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            flex: 3;
+            display: flex;
+            gap: 10px;
+            
+            .user{
+                flex: 1;
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+            }
+            input{
+                flex: 8;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .preview-image{
+                width: 4rem;
+                height: 3rem;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    hr{
+        height: 0.5px;
+        background-color: lightgray;
+        border: none;
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            input{
+                display: none;
+            }
+            label{
+                background-color: $fourthColor;
+                border-radius: 5px;
+                padding: 5px 10px;
+                color: white;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;    
+                svg{
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+
+        }
+        button{
+            background-color: $fourthColor;
+            border-radius: 5px;
+            padding: 2px 3px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: 5px;
+        }
+    }
+}
+}

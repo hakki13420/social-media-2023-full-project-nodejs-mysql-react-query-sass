@@ -1,0 +1,51 @@
+@import './theme.scss';
+@import './responsive.scss';
+
+//colors
+$primaryColor:#EAC696;
+$secondaryColor:#C8AE7D;
+$thirdColor:#765827;
+$fourthColor:#65451F;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.layout{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+    grid-template-areas:  'nav nav nav nav nav nav nav nav nav nav nav nav'
+                    'left left left main main main main main right right right right';
+
+    @include mobile{
+        grid-template-areas:  'nav nav nav nav nav nav nav nav nav nav nav nav'
+                    'main main main main main main main main main main main main';
+    }
+}
+
+@import './pages/login/login.scss';
+@import './pages/register/register.scss';
+@import './components/stories/stories.scss';
+@import './components/comments/comments.scss';
+@import './components/post/post.scss';
+@import './components/posts/posts.scss';
+@import './pages/profile/profile';
+@import './pages/home/home.scss';
+
+
+@import './components/leftbar/leftbar.scss';
+@import './components/rightbar/suggestion.scss';
+@import './components/rightbar/rightbar.scss';
+@import './components/navbar/navbar.scss';
+@import './components/notification/notification.scss';
+@import './components/share/share';
+@import './components/updateProfile/updateProfile';
+@import './components/NoImage/noImage';
